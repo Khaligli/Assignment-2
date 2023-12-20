@@ -41,5 +41,14 @@ class Movie {
         public void setRunningTime (double runningTime) {
             this.runningTime = runningTime;
         }
-    
-}
+        
+        @Override
+        public String toString() {
+            return "Movie{" +
+                    "title='" + title + '\'' +
+                    ", director='" + director + '\'' +
+                    ", releaseYear=" + releaseYear +
+                    ", runningTime=" + runningTime +
+                    '}';
+        }
+    }
