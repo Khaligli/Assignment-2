@@ -17,6 +17,13 @@ public class MovieDatabase {
     public void removeMovie (Movie movie) {
         movies.remove(movie);
     }
-    
+    public Movie getMovieDetails(String title) {
+        for (Movie movie : movies) {
+            if (movie.getTitle().equals(title)) {
+                return movie;
+            }
+        }
+        return null;
+    }
     
 }
