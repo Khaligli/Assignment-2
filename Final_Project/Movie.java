@@ -1,6 +1,10 @@
-//Create a Movie class with basic attributes like title, director, releaseYear, and runningTime.
-
 package Final_Project;
+
+import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
+
+
 
 class Movie {
     private String title; 

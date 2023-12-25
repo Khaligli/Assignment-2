@@ -1,29 +1,34 @@
 package Final_Project;
 
-import javax.swing.ActionMap;
-import javax.swing.JButton;
-import javax.swing.JFrame;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+import java.util.ArrayList;
 
 public class MovieAppGUI extends JFrame {
     private MovieDatabase movieDatabase;
-    private User currentUser;
+    private User user;
 
 
 
     movieDatabase = new MovieDatabase();
-        // Initialize GUI components here
-        // ...
+        JFrame frame = new JFrame("Simple Swing Example");
 
-        // Example button for adding a movie to the database
-        JButton addMovieButton = new JButton("Add Movie");
-        addMovieButton.addActionListener new ActionListener() {
-            @Override
-            public void actionPerformed(ActionMap e) {
-                // Code to add a movie to the database
-                // ...
-            }
+        // Set the default close operation
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        // Create a JButton
+        JButton button = new JButton("Click Me!");
+
+        // Add an ActionListener to handle button clicks
+        button.addActionListener(new ActionListener() {
+           
         }
-    }
 }
+}
+
+
+        
 
 
